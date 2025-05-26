@@ -3,18 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #9900ff ;
+html, body {
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+    background-color: #9900ff; 
 }
+
+/*body{
+    background-color: #9900ff ;
+}*/
+
 h1{
     color: rgb(0, 0, 0);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
+    font-size: 38px;
+    color: #ffffff; 
+    letter-spacing: 2px;
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.714); 
+    margin-bottom: 20px;
 }
 li{ 
     list-style: none;
-    
+
 }
 .logos {
     height: 15vh;
@@ -24,14 +39,6 @@ li{
 .rrss{
     height: 5vh;
     width: 5vh;
-}
-.carrusel{
-    height: 40vh;
-    width: auto;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-
 }
 .creadores{
     height: 30vh;
@@ -46,6 +53,8 @@ text-align: end;
 }
 .derechos{
     text-align: end;
+    margin-right: 30px;
+    font-size: 20px;
 }
 .patrocinados{
     text-align: center;
@@ -57,11 +66,7 @@ text-align: end;
     flex-direction:column;
     align-items:center;
 }
-.zapas{
-    height: 35vh;   
-    width: auto;
-    border-radius: 7px;
-}
+
 .tiendazapas{
     height: 40vh;
     width: auto;
@@ -73,9 +78,45 @@ text-align: end;
     text-align: center;
 }
 /*index*/
-.navegador{
+.navegador {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
+    padding: 15px 35px; 
+    background-color: #270140c2; 
+    box-shadow: 0 2px 10px rgb(0, 0, 0); 
+
+}
+li {
+    display: flex;       
+    list-style: none; 
+    margin: 0;         
+    padding: 0;        
+    gap: 30px;          /
+}
+
+.main {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    min-height: 50vh; 
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+/* Estilos específicos para el carrusel */
+#carouselExampleAutoplaying {
+    max-width: 650px;
+    width: 90%; 
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#carouselExampleAutoplaying .carousel-item img {
+    height: auto;      
+    max-height: 400px;   
+    object-fit: contain;
 }
 
 
@@ -83,22 +124,134 @@ text-align: end;
 
 /*store*/
 .zapas2{
-    height: 30vh;
-    width: 40wh ;
+    height: 250px;
+    width:  100% ;
+    object-fit: cover;
+    border-radius: 7px;
+    gap: 15px;
+}
+.zapas{
+    font-size: 15px;
+    border-radius: 7px;
+    text-align: center ;
+}
+section.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 55px;
+    padding: 5vh;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.airforce{
+/*contacto*/
+form{
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
 }
-.dunklow{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-.jordanmid{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+
+
+    /* Encabezado y Título Principal */
+    h1 {
+        font-size: 28px; 
+        margin-bottom: 15px; 
+        padding: 5px; 
+    }
+
+    .logos {
+        height: 10vh; 
+        width: 10vh;
+    }
+
+    /* Navegación */
+.navegador {
+    .navegador {
+        flex-direction: column;
+        padding: 15px 10px;
+        text-align: center; 
+        gap: 15px; 
+    }
+
+    }
+
+    .menu {
+        padding: 10px 15px; 
+        font-size: 0.9em; 
+        width: 90%; 
+        text-align: center; 
+        margin: 0 auto;}
+
+    /* Carrusel */
+    #carouselExampleAutoplaying {
+        max-width: 95%; 
+        margin-bottom: 20px; 
+    }
+
+    #carouselExampleAutoplaying img {
+        max-height: 250px; 
+    }
+
+    /* Subtítulos y Párrafos */
+    .subtitulos h2 {
+        font-size: 1.8em; 
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .main p { 
+        font-size: 0.9em; 
+        padding: 0 10px; 
+    }
+
+    /* Imágenes de Zapatillas*/
+    .zapas {
+        height: 25vh; 
+        max-width: 95%; 
+    }
+
+    .zapas2 { /* Zapas específicas de la tienda */
+        height: 25vh;
+        max-width: 95%;
+    }
+
+    /* Cuadrícula de Productos en la Tienda */
+    section.productos {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+        padding: 2vh; 
+    }
+
+    /* Pie de Página */
+    .footer { 
+        flex-direction: column; 
+        padding: 15px 10px; 
+    }
+
+    .derechos {
+        font-size: 16px; 
+        margin-bottom: 8px;
+    }
+
+    .redes {
+        margin-top: 8px; 
+        gap: 10px;
+    }
+
+    .rrss {
+        height: 4vh; 
+        width: 4vh;
+    }
+
+    /* Sección Creadores */
+    .creadores {
+        padding: 10px; 
+        margin: 15px auto; 
+        max-width: 95%; 
+    }
 }
