@@ -63,15 +63,6 @@ h1 {
   }
 }
 
-li {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 30px;
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -118,20 +109,44 @@ a .logos {
   }
 }
 
-.redes {
+/*  .redes{
   text-align: end;
   margin-right: 5px;
-}
-@media (max-width: 450px) {
-  .redes {
-    margin-top: 8px;
-    gap: 10px;
-  }
+      @include mobile{
+          margin-top: 8px; 
+          gap: 10px;
+      }
+      .derechos{
+          text-align: end;
+          font-size: 20px;
+          padding-top: 15px;
+          @include mobile{
+              font-size: 16px; 
+              margin-bottom: 8px
+          }
+          .rrss{
+              height: 50px;
+              width: 50px;
+              object-fit: cover;
+              @include mobile{
+                  height: 25px; 
+                  width: 25px;
+              }
+          }
+      }
+  }*/
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #9900ff;
 }
 .redes .derechos {
-  text-align: end;
+  text-align: center;
   font-size: 20px;
-  padding-top: 150px;
+  padding-top: 15px;
 }
 @media (max-width: 450px) {
   .redes .derechos {
@@ -139,14 +154,20 @@ a .logos {
     margin-bottom: 8px;
   }
 }
-.redes .derechos .rrss {
-  height: 5vh;
-  width: 5vh;
+.redes .iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.redes .iconos-redes .rrss {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
 }
 @media (max-width: 450px) {
-  .redes .derechos .rrss {
-    height: 4vh;
-    width: 4vh;
+  .redes .iconos-redes .rrss {
+    height: 25px;
+    width: 25px;
   }
 }
 
@@ -204,28 +225,93 @@ a .logos {
 }
 
 /*store*/
-.zapas2 {
-  height: 250px;
+/*.zapas2{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width:  100% ;
+    object-fit: cover;
+    border-radius: 7px;
+    gap: 15px;
+        @include mobile{
+            height: 50px;
+            max-width: auto;
+            object-fit: cover;
+        }
+        .zapas{
+            font-size: 15px;
+            border-radius: 7px;
+            text-align: center ;
+                @include mobile{
+                    height: 50px; 
+                    max-width: auto;
+                    object-fit: cover;
+            }
+        }
+    }
+*/
+/* Contenedor de productos */
+.productos {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+@media (max-width: 450px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cada artículo */
+article {
   width: 100%;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+article:hover {
+  transform: scale(1.03);
+}
+article h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+@media (max-width: 450px) {
+  article h4 {
+    font-size: 14px;
+  }
+}
+
+/* Imagen de zapatillas */
+.zapas2 {
+  width: 100%;
+  height: 250px;
   object-fit: cover;
   border-radius: 7px;
-  gap: 15px;
+  display: block;
 }
 @media (max-width: 450px) {
   .zapas2 {
-    height: 50px;
-    max-width: 60%;
+    height: 200px;
   }
 }
-.zapas2 .zapas {
+
+.zapas {
   font-size: 15px;
   border-radius: 7px;
   text-align: center;
 }
 @media (max-width: 450px) {
-  .zapas2 .zapas {
-    height: 25vh;
-    max-width: 95%;
+  .zapas {
+    font-size: 14px;
   }
 }
 
@@ -316,18 +402,12 @@ section.productos {
     .derechos {
         font-size: 16px; 
         margin-bottom: 8px;
+        text-align: end;
         .rrss {
             height: 4vh; 
             width: 4vh;
         }
     }
 }*/
-/* Sección Creadores 
-.creadores {
-    padding: 10px; 
-    margin: 15px auto; 
-    max-width: 95%; 
-}*/
-/*}*/
 
 /*# sourceMappingURL=styles.css.map */
