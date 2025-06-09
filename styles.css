@@ -1,0 +1,333 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #9900ff;
+}
+
+.logos {
+  height: 10vh;
+  width: 10vh;
+}
+
+.barra nav .navegador {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px;
+  background-color: rgba(39, 1, 64, 0.7607843137);
+  box-shadow: 0 2px 10px rgb(0, 0, 0);
+}
+@media (max-width: 450px) {
+  .barra nav .navegador {
+    flex-direction: column;
+    padding: 15px 10px;
+    text-align: center;
+    gap: 15px;
+  }
+}
+.barra nav .navegador li {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  list-style: none;
+}
+
+h1 {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 38px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.714);
+  margin-bottom: 20px;
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+}
+
+li {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a .logos {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 1px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.creadores {
+  height: 40vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+}
+@media (max-width: 450px) {
+  .creadores {
+    padding: 10px;
+    margin: 15px auto;
+    max-width: 95%;
+  }
+}
+
+.subtitulos {
+  text-align: center;
+}
+@media (max-width: 450px) {
+  .subtitulos {
+    font-size: 1.8em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.redes {
+  text-align: end;
+  margin-right: 5px;
+}
+@media (max-width: 450px) {
+  .redes {
+    margin-top: 8px;
+    gap: 10px;
+  }
+}
+.redes .derechos {
+  text-align: end;
+  font-size: 20px;
+  padding-top: 150px;
+}
+@media (max-width: 450px) {
+  .redes .derechos {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+.redes .derechos .rrss {
+  height: 5vh;
+  width: 5vh;
+}
+@media (max-width: 450px) {
+  .redes .derechos .rrss {
+    height: 4vh;
+    width: 4vh;
+  }
+}
+
+/*patrocinio*/
+.patrocinados {
+  text-align: center;
+}
+.patrocinados .patro {
+  object-fit: cover;
+}
+
+.tiendazapas {
+  height: 40vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detallesventa {
+  text-align: center;
+}
+
+.tiendazapas {
+  height: 40vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos específicos para el carrusel */
+#carouselExampleAutoplaying {
+  max-width: 650px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media (max-width: 450px) {
+  #carouselExampleAutoplaying {
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+}
+
+#carouselExampleAutoplaying .carousel-item img {
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+@media (max-width: 450px) {
+  #carouselExampleAutoplaying .carousel-item img {
+    max-height: 250px;
+  }
+}
+
+/*store*/
+.zapas2 {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  gap: 15px;
+}
+@media (max-width: 450px) {
+  .zapas2 {
+    height: 50px;
+    max-width: 60%;
+  }
+}
+.zapas2 .zapas {
+  font-size: 15px;
+  border-radius: 7px;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  .zapas2 .zapas {
+    height: 25vh;
+    max-width: 95%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2px;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+}
+
+/*section.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 55px;
+    padding: 5vh;
+    width: 100%;
+    max-width: 1200px;
+    }*/
+/*contacto*/
+/*responsive*/
+/*@include mobile {
+    h1 {
+        font-size: 28px; 
+        margin-bottom: 15px; 
+        padding: 5px; 
+    }*/
+/* Navegación */
+/*.navegador {
+    .navegador {
+    flex-direction: column;
+        padding: 15px 10px;
+        text-align: center; 
+        gap: 15px; 
+        .menu {
+            padding: 10px 15px; 
+            font-size: 0.9em; 
+            width: 90%; 
+            text-align: center; 
+            margin: 0 auto;
+            }   
+        }
+    }*/
+/* Carrusel */
+/*#carouselExampleAutoplaying {
+    max-width: 95%; 
+    margin-bottom: 20px; 
+}*/
+/*#carouselExampleAutoplaying img {
+}
+max-height: 250px; */
+/* Subtítulos y Párrafos */
+/* .subtitulos {
+    font-size: 1.8em; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}*/
+/*.main p { 
+    font-size: 0.9em; 
+    padding: 0 10px; 
+}*/
+/* Imágenes de Zapatillas*/
+/*.zapas2 { /* Zapas específicas de la tienda 
+    height: 50px;
+    max-width: 60%;
+    .zapas {
+        height: 50px; 
+        max-width: auto; 
+    }
+}*/
+/* Cuadrícula de Productos en la Tienda 
+section.productos {
+    grid-template-columns: 1fr; 
+    gap: 0px; 
+    padding: 2px; 
+}*/
+/* Pie de Página */
+/*.redes {
+    margin-top: 8px; 
+    gap: 10px;
+    .derechos {
+        font-size: 16px; 
+        margin-bottom: 8px;
+        .rrss {
+            height: 4vh; 
+            width: 4vh;
+        }
+    }
+}*/
+/* Sección Creadores 
+.creadores {
+    padding: 10px; 
+    margin: 15px auto; 
+    max-width: 95%; 
+}*/
+/*}*/
+
+/*# sourceMappingURL=styles.css.map */
