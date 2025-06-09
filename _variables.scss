@@ -1,0 +1,9 @@
+$colorprimario:  #9900ff;
+$colorsecundario: black;
+$colortercero: white;
+
+@mixin mobile {
+    @media ( max-width: 450px){
+        @content 
+    }
+}
