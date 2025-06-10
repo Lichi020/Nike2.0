@@ -224,32 +224,6 @@ a .logos {
   }
 }
 
-/*store*/
-/*.zapas2{
-    display: flex;
-    flex-direction: column;
-    height: 250px;
-    width:  100% ;
-    object-fit: cover;
-    border-radius: 7px;
-    gap: 15px;
-        @include mobile{
-            height: 50px;
-            max-width: auto;
-            object-fit: cover;
-        }
-        .zapas{
-            font-size: 15px;
-            border-radius: 7px;
-            text-align: center ;
-                @include mobile{
-                    height: 50px; 
-                    max-width: auto;
-                    object-fit: cover;
-            }
-        }
-    }
-*/
 /* Contenedor de productos */
 .productos {
   display: flex;
@@ -329,6 +303,32 @@ form {
   }
 }
 
+/*store*/
+/*.zapas2{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width:  100% ;
+    object-fit: cover;
+    border-radius: 7px;
+    gap: 15px;
+        @include mobile{
+            height: 50px;
+            max-width: auto;
+            object-fit: cover;
+        }
+        .zapas{
+            font-size: 15px;
+            border-radius: 7px;
+            text-align: center ;
+                @include mobile{
+                    height: 50px; 
+                    max-width: auto;
+                    object-fit: cover;
+            }
+        }
+    }
+*/
 /*section.productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
